@@ -13,16 +13,227 @@
       <!-- Header section -->
       <header>
         <h1>Application</h1>
-        <h3>Note: Form is to be completed at least 21 days prior to date.</h3>
+        <h2>Note: Form is to be completed at least 21 days prior to date.</h2>
       </header>
 
       <!-- Section-A -->
-      <div class="personal-details"></div>
+      <div class="personal">
+        <fieldset>
+          <legend><h2>Personal Details</h2></legend>
+          <form action="test.php" method="post" id="users">
+            <label for="username"> Name: </label>
+            <input
+              type="text"
+              name="username"
+              id="Username"
+              placeholder="Enter name here"
+            />
 
+            <br />
+            <br />
+
+            <label for="adress"> Address: </label>
+            <input
+              aria-label="adress"
+              type="text"
+              name="adress"
+              placeholder="Enter address here"
+            />
+
+            <br />
+            <br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter email here"
+              required
+            />
+
+            <br />
+            <br />
+
+            <label for="phone">Phone Number:</label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="Enter 10 digit number"
+              required
+            />
+
+            <br />
+            <br />
+            <label for="grade">Grade:</label>
+
+            <input
+              type="number"
+              id="grade"
+              name="grade"
+              min="10"
+              max="100"
+              size="40"
+              placeholder="Enter your grade here"
+            />
+
+            <br />
+            <br />
+
+            <label for="gender">Gender</label>
+
+            <br />
+            <br />
+
+            <div>
+              <input
+                type="radio"
+                id="gender"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="male">Male</label>
+            </div>
+
+            <div>
+              <input type="radio" id="gender" name="gender" value="female" />
+              <label for="female">Female</label>
+            </div>
+
+            <div>
+              <input type="radio" id="gender" name="gender" value="other" />
+              <label for="other">Other</label>
+            </div>
+
+            <br />
+            <br />
+
+            <label for="start">Date:</label>
+
+            <input
+              type="date"
+              id="start"
+              name="bootcamp-start"
+              value="mm/dd/yyyy"
+              min="08/02/2021"
+              max="12/31/2021"
+            />
+          </form>
+        </fieldset>
+      </div>
       <!-- Section-B -->
-      <div class="checkboxes"></div>
-      <div class="option"></div>
-      <div class="text-area"></div>
+      <div id="border" class="checkboxes">
+        <h2>Check All That Apply</h2>
+        <div class="checkbox-wrapper">
+          <div>
+            <input
+              type="checkbox"
+              id="javascript"
+              name="javascript"
+              aria-label="checkbox"
+            />
+            <label for="learn">I want to learn Javascript</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="react"
+              name="react"
+              aria-label="checkbox"
+            />
+            <label for="learn">I want to learn React</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="degree"
+              name="degree"
+              aria-label="checkbox"
+            />
+            <label for="degree">I have a degree in engineering</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="work"
+              name="work"
+              aria-label="checkbox"
+              checked
+            />
+            <label for="learn">I work full-time</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="job"
+              name="job"
+              aria-label="checkbox"
+              checked
+            />
+            <label for="learn">I'm motivated to find a job</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="live"
+              name="live"
+              aria-label="checkbox"
+              checked
+            />
+            <label for="learn">I live in USA</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section-C -->
+      <div id="border" class="option">
+        <div class="option-wrapper">
+          <div id="label">
+            <label for="education-level">Education Level:</label>
+          </div>
+
+          <div id="select">
+            <select name="education" id="education-level">
+              <option value="high-school">High School</option>
+              <option value="college">College</option>
+              <option value="professional-certificate">
+                Professional Certificate
+              </option>
+              <option value="bachelors-degree">Bachelors Degree</option>
+              <option value="masters-degree">Masters Degree</option>
+              <option value="doctorate-degree">Doctorate Degree</option>
+              <option value="professional-degree">Professional Degree</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section-D -->
+      <div class="text-area">
+        <fieldset>
+          <legend><h2>Essay Section</h2></legend>
+          <textarea
+            placeholder="Enter Text Here"
+            name="essay"
+            id="essay"
+            cols="70"
+            rows="6"
+          ></textarea>
+        </fieldset>
+      </div>
+
+      <!-- Section-E -->
+      <div class="submit">
+        <button>Send Your Application</button>
+      </div>
     </div>
   </body>
 </html>

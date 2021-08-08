@@ -6,7 +6,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  font-size: 15px;
 }
 
 *,
@@ -25,3 +24,96 @@ a {
 }
 
 /* Core style */
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 2% auto;
+  padding: 2% 3%;
+  border: 3px solid darkgray;
+  border-radius: 15px;
+}
+
+#border {
+  border: 1px solid #000;
+  margin: 20px 2px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+/* Header style */
+
+header h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 500;
+}
+
+/* Section-A style */
+
+input {
+  margin-left: 5px;
+  padding: 2px;
+  font-size: 16px;
+}
+
+label {
+  font-size: 24px;
+}
+
+#grade {
+  width: 15%;
+}
+
+/* Section-B style */
+
+.checkbox-wrapper {
+  margin: 0px 0px 35px 15px;
+}
+
+.checkboxes h2 {
+  padding: 0px 15px;
+}
+
+/* Section-C style */
+
+.option-wrapper {
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.option select {
+  font-size: 16px;
+  max-width: 8%;
+  min-width: 110px;
+}
+
+.option #select {
+  margin-left: 5px;
+}
+
+/* Section-D style */
+textarea {
+  font-size: 16px;
+}
+
+/* Section-E */
+.submit {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
